@@ -2,6 +2,7 @@ PATH
   remote: .
   specs:
     asciidoctor-flashcard (0.1.0)
+      asciidoctor (~> 2.0)
 
 GEM
   remote: https://rubygems.org/

@@ -9,12 +9,12 @@ Gem::Specification.new do |s|
   s.description   = "An extension and custom converter for asciidoctor documents to extract flashcards from the documen, which can be imported to anki"
   s.homepage      = "https://github.com/Leon0402/asciidoctor-flashcard"
   s.license       = "MIT"
-  s.files       = ["lib/version.rb", "lib/flashcardExtractor.rb"]
+  s.files       = ["lib/version.rb", "lib/asciidoctor-flashcard.rb", "lib/extension.rb"]
   s.metadata = {
     'bug_tracker_uri' => 'https://github.com/Leon0402/asciidoctor-flashcardissues',
     'changelog_uri' => 'https://github.com/Leon0402/asciidoctor-flashcard/blob/master/CHANGELOG.adoc',
     'source_code_uri' => 'https://github.com/Leon0402/asciidoctor-flashcard'
   }
-  #s.add_development_dependency "rake", "~> 13.0"
-  #s.add_runtime_dependency "asciidoctor", "~> 1.5"
+  s.add_development_dependency "rake", "~> 13.0"
+  s.add_runtime_dependency "asciidoctor", "~> 2.0"
 end

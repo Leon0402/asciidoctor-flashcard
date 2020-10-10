@@ -11,6 +11,16 @@ Content entered directly below the header but before the first section heading i
 
 == First level heading
 
+[.question]
+--
+What is the speed of light?
+--
+
+[.answer]
+--
+300,000 km/sec
+--
+
 This is a paragraph with a *bold* word and an _italicized_ word.
 
 .Image caption
@@ -98,4 +108,3 @@ What is the speed of light?
 --
 300,000 km/sec
 --
-
