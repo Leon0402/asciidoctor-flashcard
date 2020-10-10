@@ -1,0 +1,8 @@
+= Asciidoctor Flashcard Changelog
+
+== Unreleased
+
+Enhancements::
+
+* Add basic gemfile structure 
+* Add Tree Processor for stripping everything but flashcard blocks
