@@ -1,0 +1,28 @@
+:imagesdir: images
+
+[.question]
+--
+What is the speed of light?
+--
+
+[.answer]
+--
+300,000 km/sec
+--
+
+[.question]
+--
+What are complementary colors?
+
+image::color_wheel.svg[]
+--
+
+[.answer]
+--
+Two colors, which are opposite on the color wheel
+
+.Basic complementary colors
+. yellow and purple 
+. blue and orange 
+. red and green
+--
