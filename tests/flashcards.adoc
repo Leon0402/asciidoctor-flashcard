@@ -1,15 +1,17 @@
-:imagesdir: images
-
+[flashcard, 10]
+====
 [.question]
---
-What is the speed of light?
---
+What is the speed of light??
 
 [.answer]
---
 300,000 km/sec
---
 
+[.tags]
+tag1, tag2
+====
+
+[flashcard, 20, basic]
+====
 [.question]
 --
 What are complementary colors?
@@ -26,3 +28,11 @@ Two colors, which are opposite on the color wheel
 . blue and orange 
 . red and green
 --
+====
+
+[flashcard, 30]
+====
+What is the answer to everything?
+
+42.
+====

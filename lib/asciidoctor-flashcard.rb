@@ -1,5 +1,5 @@
-require_relative 'extension'
+require_relative "flashcard-block/extension"
 
-Asciidoctor::Extensions.register do
-    tree_processor Asciidoctor::Flashcard::Extensions::ExtractFlashcardProcessor
+Extensions.register do
+    block FlashcardBlock
 end
