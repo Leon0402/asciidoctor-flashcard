@@ -5,4 +5,6 @@
 Enhancements::
 
 * Add basic gemfile structure 
-* Add Tree Processor for stripping everything but flashcard blocks
+* Custom flashcard block
+* Custom converter to produce anki compatible txt files from flashcard blocks
+* Flashcard extractor to use them in a normal document

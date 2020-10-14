@@ -1,2 +1,10 @@
-Dir.glob('tasks/*.rake').each {|file| load file }
-task default: %w(test)
+require "bundler/gem_tasks"
+require "rake/testtask"
+
+Rake::TestTask.new(:test) do |t|
+  t.libs << "test"
+  t.libs << "lib"
+  t.test_files = FileList["tests/test*.rb"]
+end
+
+task :default => :test
