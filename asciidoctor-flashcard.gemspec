@@ -1,4 +1,4 @@
-require_relative 'lib/version.rb'
+require_relative "lib/asciidoctor-flashcard/version.rb"
 
 Gem::Specification.new do |s|
   s.name          = "asciidoctor-flashcard"

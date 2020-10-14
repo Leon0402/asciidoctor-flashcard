@@ -1,7 +1,10 @@
+= Flashcards
+:imagesdir: images
+
 [flashcard, 10]
 ====
 [.question]
-What is the speed of light??
+What is the speed of light?
 
 [.answer]
 300,000 km/sec
