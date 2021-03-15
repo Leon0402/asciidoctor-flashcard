@@ -1,0 +1,9 @@
+= Contributing
+
+
+== Testing
+
+[source, console]
+----
+$ bundle exec rake
+----
