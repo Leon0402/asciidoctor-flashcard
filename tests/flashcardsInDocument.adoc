@@ -12,7 +12,7 @@ Content entered directly below the header but before the first section heading i
 [flashcard, 10]
 ====
 [.question]
-What is the speed of light??
+What is the speed of light?
 
 [.answer]
 300,000 km/sec
