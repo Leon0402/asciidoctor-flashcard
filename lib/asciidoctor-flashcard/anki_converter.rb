@@ -23,6 +23,18 @@ module Asciidoctor
 
         return node.attributes["id"] + "," + node.blocks.map {|b| b.convert.tr("\n", "").gsub(",", "&#44;") }.join(",") + empty_fields + "\n"
       end
+
+      def convert_image(node)
+        node.set_attr 'target', File.basename(node.attr 'target') 
+        node.document.set_attr 'imagesdir', ''
+        super
+      end
+
+      def convert_inline_image(node)
+        node.set_attr 'target', File.basename(node.attr 'target') 
+        node.document.set_attr 'imagesdir', ''
+        super
+      end
     end
   end
 end
