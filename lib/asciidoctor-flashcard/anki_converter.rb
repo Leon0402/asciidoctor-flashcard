@@ -1,4 +1,5 @@
 require 'asciidoctor'
+require 'yaml'
 
 module Asciidoctor
   module Flashcard
@@ -9,19 +10,31 @@ module Asciidoctor
 
       def initialize(backend, opts = {})
         super
-        outfilesuffix(".txt")
+        outfilesuffix(".yaml")
       end 
 
       def convert_document(node)
-        return node.blocks.map {|b| b.convert }.join('')
+        decks = {}
+        node.blocks.each do |block|
+          decks[block.attributes["deck"]] ||= [] 
+          decks[block.attributes["deck"]].append(block.convert)
+        end
+
+        return {'decks' => decks.map { |deckname , flashcards| {'name': deckname, 'flashcards': flashcards } }}.to_yaml
       end
 
       def convert_flashcard(node)
-        if node.attributes["type"].nil? || node.attributes["type"] == "basic" 
-          empty_fields = ',' * (@@basic_flashcard_fields - node.blocks.size() - 1)
-        end
+        return  { "id" => node.attributes["fid"], 
+                  "notetype" => "Basic Asciidoctor",
+                  "fields" => [
+                    { "front" => _convert_field(node.blocks[0])}, 
+                    { "back" => _convert_field(node.blocks[1])}
+                  ] 
+                }
+      end
 
-        return node.attributes["id"] + "," + node.blocks.map {|b| b.convert.tr("\n", "").gsub(",", "&#44;") }.join(",") + empty_fields + "\n"
+      def _convert_field(block)
+        return block.convert.tr("\n", "").gsub(",", "&#44;")
       end
 
       def convert_image(node)

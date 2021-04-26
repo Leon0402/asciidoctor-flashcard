@@ -1,0 +1,20 @@
+= Some Title
+Some Author <Some E-Mail>
+:deck-name: My complete Deck
+
+[flashcard, 10]
+====
+[.question]
+Simple Question
+
+[.answer]
+Simple Answer
+====
+
+:leveloffset: +1
+
+include::flashcards_sub1.adoc[]
+
+include::flashcards_sub2.adoc[]
+
+:leveloffset: -1

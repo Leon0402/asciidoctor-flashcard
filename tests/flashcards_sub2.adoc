@@ -1,6 +1,6 @@
-= Flashcards
+= Flashcards Subdeck 2
 :imagesdir: images
-:deck-name: Simple Flashcards
+:deck-name: Subdeck 2
 
 [flashcard, 10]
 ====
@@ -32,11 +32,4 @@ Two colors, which are opposite on the color wheel
 . blue and orange 
 . red and green
 --
-====
-
-[flashcard, 30]
-====
-What is the answer to everything?
-
-42.
 ====

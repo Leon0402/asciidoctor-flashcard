@@ -1,0 +1,5 @@
+# Asciidoctor Flashcard 
+
+## TO DO 
+
+* Add error Message for duplicate ids
